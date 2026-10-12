@@ -279,7 +279,21 @@ pub fn font_files(script: CjkScript) -> Vec<FontFile> {
                 f("/usr/share/fonts/truetype/fonts-japanese-gothic.ttf", ""),
                 f("/usr/share/fonts/truetype/takao-gothic/TakaoPGothic.ttf", ""),
             ],
-            SimplifiedChinese | TraditionalChinese => vec![
+            SimplifiedChinese => vec![
+                // Windows fonts copied onto a Linux system (Gentoo /usr/share/fonts/windows).
+                f("/usr/share/fonts/windows/yaheiconsolashybrid.ttf", "YaHei Consolas Hybrid"),
+                f("/usr/share/fonts/windows/msyh.ttc", "Microsoft YaHei"),
+                f("/usr/share/fonts/windows/msyh.ttf", ""),
+                f("/usr/share/fonts/windows/simsun.ttc", ""),
+                f("/usr/share/fonts/truetype/wqy/wqy-microhei.ttc", ""),
+                f("/usr/share/fonts/wenquanyi/wqy-microhei/wqy-microhei.ttc", ""),
+                f("/usr/share/fonts/truetype/wqy/wqy-zenhei.ttc", ""),
+                f("/usr/share/fonts/wenquanyi/wqy-zenhei/wqy-zenhei.ttc", ""),
+            ],
+            TraditionalChinese => vec![
+                f("/usr/share/fonts/windows/msjh.ttc", "Microsoft JhengHei"),
+                f("/usr/share/fonts/windows/msjh.ttf", ""),
+                f("/usr/share/fonts/windows/mingliu.ttc", ""),
                 f("/usr/share/fonts/truetype/wqy/wqy-microhei.ttc", ""),
                 f("/usr/share/fonts/wenquanyi/wqy-microhei/wqy-microhei.ttc", ""),
                 f("/usr/share/fonts/truetype/wqy/wqy-zenhei.ttc", ""),
